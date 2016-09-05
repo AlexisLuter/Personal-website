@@ -21,6 +21,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   padding: 0;
+  background-color: white;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -97,4 +98,24 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+.navLink {
+  list-style: none;
+  display: inline;
+  margin-left: 40px;
+}
+.navLink a {color: #587233;}
+.navLink-container {
+  float: right;
+  padding: 20px;
+  padding-right: 90px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+
+}
+
+.home-photo-profile1 {
+  width: 750px;
+
 }
