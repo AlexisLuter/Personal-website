@@ -207,6 +207,11 @@ body {
 .ng-enter           { animation: slideInRight 0.20s both ease-in; }
 .ng-leave           { }
 
+/* Responsive: Portrait tablets and up */
+@media screen and (max-width: 850px) {
+  .ng-enter           { animation: none; }
+}
+
 /* leaving animations ----------------------------------------- */
 /* rotate and fall */
 @keyframes rotateFall {
