@@ -20,7 +20,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 }
 
 .pushTop {
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .pageTitle {
@@ -35,6 +35,35 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 }
 
+.contactBubble {
+  width: 85px;
+  height: 85px;
+  line-height: 85px;
+  margin: 5px;
+  border: 1px solid #587233;
+  border-radius: 45px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.contactBubble a {
+  color: black;
+  font-family: 'Dancing Script', cursive;
+  font-size: 21px;
+}
+
+.contactBubble a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.contactBubble-phone a {
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -45,14 +74,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 body {
   padding: 0;
   background-color: white;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /* Custom page header */
@@ -74,6 +95,10 @@ body {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+}
+
+.container {
+  max-width: 730px;
 }
 
 .container-narrow > hr {
@@ -100,33 +125,11 @@ body {
   }
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
-
 .navLink {
   list-style: none;
   display: inline;
-  margin-left: 40px;
+  margin-left: 20px;
+  margin-right: 20px
 }
 .navLink a {color: #587233;}
 .navLink a:hover {text-decoration:none;}
@@ -147,7 +150,7 @@ body {
 }
 
 .home-photo-profile1 {
-  background-image: url('../images/profile1.jpg');
+  background-image: url('../images/profile1.png');
   width: 100%;
   height: 500px;
   background-position: center;
@@ -157,9 +160,92 @@ body {
   box-shadow: 0 0 8px 8px white inset;
 }
 
+/* Responsive: Portrait tablets and up */
+@media screen and (max-width: 850px) {
+  .siteName {
+    width: 100%;
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+
+  .navLink-container {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (max-width: 650px) {
+  .siteName {
+    width: 100%;
+    font-size: 36px;
+  }
+
+  .navLink-container {
+    padding: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .navLink {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+/* ANIMATIONS
+============================================================================= */
+
 .grow {
   transition: all 0.5s ease-in-out;
 }
 .grow:hover {
   transform: scale(1.01);
+}
+
+.ng-enter           { animation: slideInRight 0.20s both ease-in; }
+.ng-leave           { }
+
+/* Responsive: Portrait tablets and up */
+@media screen and (max-width: 850px) {
+  .ng-enter           { animation: none; }
+}
+
+/* leaving animations ----------------------------------------- */
+/* rotate and fall */
+@keyframes rotateFall {
+    0%      { transform: rotateZ(0deg); }
+    20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+    40%     { transform: rotateZ(17deg); }
+    60%     { transform: rotateZ(16deg); }
+    100%    { transform: translateY(100%) rotateZ(17deg); }
+}
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+/* rotate out newspaper */
+@keyframes rotateOutNewspaper {
+    to      { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+
+/* entering animations --------------------------------------- */
+/* scale up */
+@keyframes scaleUp {
+    from    { opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+    from    { transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+
+/* slide in from the bottom */
+@keyframes slideInUp {
+    from    { transform:translateY(100%); }
+    to      { transform: translateY(0); }
 }
