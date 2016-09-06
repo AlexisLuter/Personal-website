@@ -51,7 +51,7 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 3px 3px 23px darkgrey;
   margin-bottom: 10px;
 
   /* Make the masthead heading the same height as the navigation */
@@ -126,12 +126,18 @@ body {
 .navLink a:hover {text-decoration:none;}
 .navLink a:focus {text-decoration:none;}
 .navLink-container {
-  float: right;
+  width: 100%;
   padding: 20px;
-  padding-right: 90px;
+  padding-left: 40px;
+  padding-right: 40px;
   font-family: 'Dancing Script', cursive;
-  font-size: 50px;
+  font-size: 42px;
+  text-align: right;
+}
 
+.siteName {
+  float: left;
+  margin: 0;
 }
 
 .home-photo-profile1 {
