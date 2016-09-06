@@ -1,6 +1,24 @@
 <div class="pushTop">
-  <h1 class="contactTitle">Contact Info</h1>
-    <p class="contactText"> Email: <a href="mailto:luteralexis@gmail.com?subject=Contact Me">luteralexis@gmail.com</a> </p>
+  <h1 class="contactTitle">Contact Me</h1>
+
+  <br /><br />
+
+  <p>Send me an email by clicking the button below, or browse my other forms of communication.</p>
+
+  <br />
+  <table>
+    <tr>
+      <td><div class="contactBubble" ng-click="goTo('mailto:luteralexis@gmail.com?subject=Contact Me')"><a>Email</a></div></td>
+      <td><div class="contactBubble" ng-click="open('https://facebook.com/alexisluter')" href=""><a>Facebook</a></div></td>
+      <td><div class="contactBubble" ng-click="displayPhone = !displayPhone" ng-class="{ 'contactBubble-phone': displayPhone }">
+        <a>{{displayPhone ? "310-000-0000" : "Text"}}</a>
+      </div></td>
+    </tr>
+  </table>
+
+  <br /><br /><br /><br />
+
+  (luteralexis@gmail.com, 310-000-0000)
 
 
 </div>
