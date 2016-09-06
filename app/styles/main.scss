@@ -35,6 +35,35 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 }
 
+.contactBubble {
+  width: 85px;
+  height: 85px;
+  line-height: 85px;
+  margin: 5px;
+  border: 1px solid #587233;
+  border-radius: 45px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.contactBubble a {
+  color: black;
+  font-family: 'Dancing Script', cursive;
+  font-size: 21px;
+}
+
+.contactBubble a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.contactBubble-phone a {
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
