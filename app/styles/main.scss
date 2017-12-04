@@ -8,31 +8,22 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 }
 
-.nameIntro {
-  font-family: 'Dancing Script', cursive;
-  font-size: 40px;
-
-}
-
-
 .indent {
   text-indent: 25px;
 }
 
 .pushTop {
-  margin-top: 60px;
+  margin-top: 35px;
 }
 
 .pageTitle {
   font-family: 'Dancing Script', cursive;
-  font-size: 40px;
+  font-size: 35px;
 }
 
-.contactTitle {
+.subHeader {
   font-family: 'Dancing Script', cursive;
-  font-size: 40px;
-
-
+  font-size: 28px;
 }
 
 .contactBubble {
@@ -140,7 +131,7 @@ body {
   padding-left: 40px;
   padding-right: 40px;
   font-family: 'Dancing Script', cursive;
-  font-size: 42px;
+  font-size: 37px;
   text-align: right;
 }
 
@@ -151,18 +142,22 @@ body {
 
 .home-photo-profile1 {
   background-image: url('../images/profile1.png');
-  width: 100%;
-  height: 500px;
+  width: 80%;
+  height: 400px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: content-box;
-  box-shadow: 0 0 8px 8px white inset;
+  margin-left: auto;
+  margin-right: auto;
+  // box-shadow: 0 0 8px 8px white inset;
+
+  box-shadow: 1px 1px 8px rgba(0,0,0,0.8);
 }
 
 .portfolio {
   a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #587233;
   }
 
@@ -185,7 +180,7 @@ body {
 @media screen and (max-width: 850px) {
   .siteName {
     width: 100%;
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 5px;
   }
 
