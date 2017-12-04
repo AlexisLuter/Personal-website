@@ -78,7 +78,7 @@ body {
 
 /* Custom page header */
 .header {
-  box-shadow: 3px 3px 23px darkgrey;
+  box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.5);
   margin-bottom: 10px;
 
   /* Make the masthead heading the same height as the navigation */
@@ -136,7 +136,7 @@ body {
 .navLink a:focus {text-decoration:none;}
 .navLink-container {
   width: 100%;
-  padding: 20px;
+  padding: 2px;
   padding-left: 40px;
   padding-right: 40px;
   font-family: 'Dancing Script', cursive;

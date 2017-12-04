@@ -46,4 +46,7 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+  .config(['$locationProvider', function($locationProvider) {
+    $locationProvider.hashPrefix('');
+  }]);
