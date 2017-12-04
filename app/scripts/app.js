@@ -24,6 +24,15 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/portfolio', {
+        templateUrl: 'views/portfolio.html',
+        controller: 'PortfolioCtrl',
+        controllerAs: 'portfolio'
+      })
+      .when('/materials/382b', {
+        templateUrl: 'views/materials-382b.html',
+        controller: 'Materials382bCtrl'
+      })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',

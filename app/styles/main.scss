@@ -160,6 +160,27 @@ body {
   box-shadow: 0 0 8px 8px white inset;
 }
 
+.portfolio {
+  a {
+    text-decoration: none;
+    color: #587233;
+  }
+
+  .googleDocs {
+    width: 100%;
+    height: 800px;
+
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.8);
+    border: none;
+  }
+
+  .youtube {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (max-width: 850px) {
   .siteName {
