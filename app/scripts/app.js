@@ -43,6 +43,11 @@ angular
         controller: 'ContactCtrl',
         controllerAs: 'contact'
       })
+      .when('/mus382b', {
+        templateUrl: 'views/mus382b.html',
+        controller: 'Mus382bCtrl',
+        controllerAs: 'mus382b'
+      })
       .otherwise({
         redirectTo: '/'
       });
