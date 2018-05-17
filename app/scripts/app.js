@@ -43,10 +43,15 @@ angular
         controller: 'ContactCtrl',
         controllerAs: 'contact'
       })
-      .when('/mus382b', {
+      .when('/classes/mus382b', {
         templateUrl: 'views/mus382b.html',
         controller: 'Mus382bCtrl',
         controllerAs: 'mus382b'
+      })
+      .when('/classes/mus482b', {
+        templateUrl: 'views/mus482b.html',
+        controller: 'Mus482bCtrl',
+        controllerAs: 'mus482b'
       })
       .otherwise({
         redirectTo: '/'
