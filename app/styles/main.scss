@@ -155,6 +155,18 @@ body {
   box-shadow: 1px 1px 8px rgba(0,0,0,0.8);
 }
 
+.portfolio-photo {
+  background-image: url('../images/BCCM.jpg');
+  width: 318px;
+  height: 159px;
+  background-position: center;
+  background-size: cover;
+
+
+
+}
+
+
 .portfolio, .mus382b, .mus482b, .mus485 {
   a {
     text-decoration: underline;
