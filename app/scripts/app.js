@@ -53,6 +53,11 @@ angular
         controller: 'Mus482bCtrl',
         controllerAs: 'mus482b'
       })
+      .when('/classes/mus485', {
+        templateUrl: 'views/mus485.html',
+        controller: 'Mus485Ctrl',
+        controllerAs: 'mus485'
+      })
       .otherwise({
         redirectTo: '/'
       });
