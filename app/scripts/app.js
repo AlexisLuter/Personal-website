@@ -58,6 +58,16 @@ angular
         controller: 'ContactCtrl',
         controllerAs: 'contact'
       })
+      .when('/literatureProject', {
+        templateUrl: 'views/literatureproject.html',
+        controller: 'LiteratureprojectCtrl',
+        controllerAs: 'literatureProject'
+      })
+      .when('/mod1reflection', {
+        templateUrl: 'views/mod1reflection.html',
+        controller: 'Mod1reflectionCtrl',
+        controllerAs: 'mod1reflection'
+      })
       .otherwise({
         redirectTo: '/'
       });

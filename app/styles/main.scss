@@ -166,8 +166,13 @@ body {
 
 }
 
+.literatureProject {
+  width: 100%;
+  height: 800px
 
-.portfolio, .mus382b, .mus482b, .mus485 {
+}
+
+.portfolio, .mus382b, .mus482b, .mus485, {
   a {
     text-decoration: underline;
     color: #587233;
@@ -180,6 +185,8 @@ body {
     box-shadow: 1px 1px 7px rgba(0,0,0,0.8);
     border: none;
   }
+
+
 
   .youtube {
     margin-left: auto;
