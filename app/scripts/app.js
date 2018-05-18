@@ -68,6 +68,26 @@ angular
         controller: 'Mod1reflectionCtrl',
         controllerAs: 'mod1reflection'
       })
+      .when('/improvMaterials', {
+        templateUrl: 'views/improvmaterials.html',
+        controller: 'ImprovmaterialsCtrl',
+        controllerAs: 'improvMaterials'
+      })
+      .when('/improvLP', {
+        templateUrl: 'views/improvlp.html',
+        controller: 'ImprovlpCtrl',
+        controllerAs: 'improvLP'
+      })
+      .when('/compReflection', {
+        templateUrl: 'views/compreflection.html',
+        controller: 'CompreflectionCtrl',
+        controllerAs: 'compReflection'
+      })
+      .when('/485songReflection', {
+        templateUrl: 'views/485songreflection.html',
+        controller: '485songreflectionCtrl',
+        controllerAs: '485songReflection'
+      })
       .otherwise({
         redirectTo: '/'
       });
